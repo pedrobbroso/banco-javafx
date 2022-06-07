@@ -26,7 +26,6 @@ CREATE TABLE turma (
   Periodo varchar(60) NOT NULL,
   Sala varchar(100) NOT NULL,
   cursosId int(11) NOT NULL,
-  instrutorId int(11) NOT NULL,
   PRIMARY KEY (Id),
   FOREIGN KEY (cursosId) REFERENCES cursos (id)
 );
